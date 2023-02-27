@@ -1,3 +1,306 @@
+html,
 body {
-    background-color: azure;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-bottom: 60px;
+    /* background-color: azure; */
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: var(--bs-nav-tabs-link-active-color);
+    /* background-color: azure; */
+    border-color: var(--bs-nav-tabs-link-active-border-color);
+}
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+.blue {
+    color: blue;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.pl-10 {
+    padding-left: 10px !important;
+}
+
+.pr-10 {
+    padding-right: 10px !important;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.add-attr-spinner {
+    position: relative;
+    top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.copy-right {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.ml-15 {
+    margin-left: 15px;
+}
+
+.mr-15 {
+    margin-right: 15px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.fs-150 {
+    font-size: 150%;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.config {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.right {
+    float: right;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.p-0 {
+    padding: 0px !important;
+}
+
+/* .cfg-connect {
+    color: grey;
+    background: white;
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 15px;
+} */
+
+.fs-80 {
+    font-size: 80%;
+}
+
+.fs-120 {
+    font-size: 120%;
+}
+
+.pt-5 {
+    padding-top: 5px !important;
+}
+
+.profile-picture {
+    width: 40px;
+    /* width of the profile picture */
+    height: 40px;
+    /* height of the profile picture */
+    border-radius: 50%;
+    /* makes the profile picture round */
+    overflow: hidden;
+    /* hides any overflow */
+    position: relative;
+    top: 10px;
+}
+
+.profile-picture img {
+    width: 100%;
+    /* makes the image fill the entire .profile-picture div */
+}
+
+.grey {
+    color: gray !important;
+}
+
+.iflex {
+    display: inline-flex;
+}
+
+.width-50 {
+    width: 50% !important;
+}
+
+.width-100 {
+    width: 100% !important;
+}
+
+.m-t-5 {
+    margin-top: 5px;
+}
+
+.beta-mark {
+    font-weight: 200;
+    font-size: medium;
+    position: relative;
+    top: -10px;
+}
+
+#nav-tab {
+    background: #fff !important;
+    border: 1px solid lightgrey !important;
+}
+
+.small {
+    font-size: small;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: #000;
+    background-color: #fbfbfb;
+    border-radius: 0px;
+    border-top: 0 !important;
+}
+
+.pl-0 {
+    padding-left: 0px !important;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    border-radius: 0px;
+    background: #fbfbfb;
+}
+
+.pt-0 {
+    padding-top: 0 !important;
+}
+
+.alert-div {
+    background: #e3fff2;
+    border: 1px solid #e9eee8;
+}
+
+.pr-0 {
+    padding-right: 0 !important;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.width-70 {
+    width: 70% !important;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.center {
+    text-align: center !important;
+}
+
+.color-gray {
+    color: lightgray;
+}
+
+.br-0 {
+    border-radius: 0 !important;
+}
+
+.shadow {
+    box-shadow: 0px 1px 7px #dbdbdb;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.pl-45 {
+    padding-left: 45px;
+}
+
+.pl-20 {
+    padding-left: 20px;
+}
+
+input::-webkit-input-placeholder {
+    font-size: 0.8em !important;
+}
+
+input::-moz-placeholder {
+    font-size: 0.8em !important;
+}
+
+input::-ms-input-placeholder {
+    font-size: 0.8em !important;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+.footer {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    /* background-color: #333; */
+    color: #fff;
+    text-align: center;
+}
+
+.green {
+    color: rgb(129 129 129) !important;
+}
+
+.red {
+    color: rgb(212, 7, 7) !important;
+}
+
+.border-0 {
+    border: 0 !important;
+}
+
+.trans-property-size {
+    width: 60px;
+    margin: 0 10px;
+    position: relative;
+    top: -5px;
+}
+
+.flex {
+    display: flex;
 }

@@ -1,16 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
 </head>
-<body>
-    <p>hello world</p>
-    <code><%= text %></code>
 
+<body>
+    <div class="container">
+        <div class="mt-30 center">
+            <h3>Story Catalogue</h3>
+            <div class="alert alert-dark hidden" role="alert">
+            </div>
+        </div>
+        <div class="mt-30 col-md-8 offset-md-2">
+            <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Catalog</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                        type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Search</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                        type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">My
+                        Profile</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="disabled-tab" data-bs-toggle="tab"
+                        data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane"
+                        aria-selected="false">Authenticate</button>
+                </li>
+            </ul>
+            <div class="tab-content pt-10" id="myTabContent">
+                <div class="tab-pane fade" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+
+                </div>
+
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                ...</div>
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div>
+                            <h5>About Me</h5>
+                            <form class="row g-3 pt-10">
+                                <div class="">
+                                    <label>Name</label>
+                                    <input type="text" class="form-control prof-name" placeholder="">
+
+                                    <label class="pt-10">Email</label>
+                                    <input type="text" class="form-control prof-email" placeholder="">
+
+                                    <label class="pt-10">About</label>
+                                    <textarea class="form-control prof-about" placeholder=""></textarea>
+                                </div>
+                                <div class="">
+                                    <button class="btn btn-primary mb-3 update-btn-before" onclick="return false">Update</button>
+                                    <button class="btn btn-primary update-btn-after hidden" type="button" disabled>
+                                        <span class="spinner-border spinner-border-sm" role="status"
+                                            aria-hidden="true"></span>
+                                        Updating...
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <h5>Create a Story</h5>
+                            <form class="row g-3 pt-10">
+                                <div class="">
+                                    <label>Title of Story</label>
+                                    <input type="text" class="form-control story-title" placeholder="">
+
+                                    <label class="pt-10">Story body</label>
+                                    <textarea class="form-control story-body" placeholder=""></textarea>
+                                </div>
+                                <div class="">
+                                    <button class="btn btn-primary mb-3 submit-story-btn-before" onclick="return false">Create Story</button>
+                                    <button class="btn btn-primary submit-story-btn-after hidden" type="button" disabled>
+                                        <span class="spinner-border spinner-border-sm" role="status"
+                                            aria-hidden="true"></span>
+                                        Processing...
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade show active" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab"
+                tabindex="0">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="bold">Sign up with Samaritan OS</p>
+                        <div>
+                            <form class="row g-3 pt-10">
+                                <div class="">
+                                    <label>Enter your samaritans DID:</label>
+                                    <input type="text" class="form-control did-address-1"
+                                        placeholder="did:sam:root:fsjnsd98sdu09sahs0a9...">
+
+                                    <label class="pt-10">Please enter your app access key:</label>
+                                    <input type="text" class="form-control app-access-key"
+                                        placeholder="0sufvjgsgfs0j...">
+
+                                    <label class="pt-10">Password:</label>
+                                    <input type="password" class="form-control pass-word" placeholder="">
+                                </div>
+                                <div class="">
+                                    <button class="btn btn-primary mb-3 signup-btn-before" onclick="return false">Sign
+                                        Up</button>
+                                    <button class="btn btn-primary signup-btn-after hidden" type="button" disabled>
+                                        <span class="spinner-border spinner-border-sm" role="status"
+                                            aria-hidden="true"></span>
+                                        Signing up...
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="bold">Sign In</p>
+                        <div>
+                            <form class="row g-3 pt-10">
+                                <div class="">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control email-address" placeholder="">
+
+                                    <label class="pt-10">Password:</label>
+                                    <input type="password" class="form-control password-1" placeholder="">
+                                </div>
+                                <div class="">
+                                    <button class="btn btn-primary mb-3 signin-btn-before" onclick="return false">Sign
+                                        In</button>
+                                    <button class="btn btn-primary signin-btn-after hidden" type="button" disabled>
+                                        <span class="spinner-border spinner-border-sm" role="status"
+                                            aria-hidden="true"></span>
+                                        Signing you in...
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/main.js"></script>
+    <script src="js/bootstrap.js"></script>
 </body>
+
 </html>
